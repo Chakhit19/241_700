@@ -1,3 +1,4 @@
+/* 1. ดึง Font จากโฟลเดอร์ Kanit ที่อยู่ด้านนอก */
 @font-face {
     font-family: 'Kanit';
     /* ../ หมายถึงถอยออกจากโฟลเดอร์ Frontend 1 ชั้น */
@@ -61,7 +62,8 @@ body {
     font-weight: 500;
 }
 
-.form, textarea {
+.form,
+textarea {
     flex: 1;
     padding: 8px 12px;
     border: 1px solid #ddd;
@@ -92,15 +94,20 @@ textarea {
     background-color: #45a049;
 }
 
-.message{
-    background-color: rgb(45, 236, 236);
+.message {
+    background-color: lightgrey;
     padding: 10px;
     margin-bottom: 10px;
     border-radius: 6px;
     display: none;
 }
 
-.message.danger{
-    background-color: lightcoral;
+.message.success {
+    background-color: #d4edda;
+    display: block;
+}
+
+.message.danger {
+    background-color: #f8d7da;
     display: block;
 }
